@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language to English Translator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #343a40, #495057);
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        section#project-details {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .container {
+            max-width: 1200px;
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .project-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .project-image img:hover {
+            transform: scale(1.05);
+        }
+        .project-description {
+            flex: 1;
+            padding: 0 40px;
+        }
+        h2 {
+            color: #495057;
+            font-size: 2.5em;
+            margin-top: 0;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        p, li {
+            line-height: 1.8;
+            font-size: 1.1em;
+            color: #555;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li::before {
+            content: "✔";
+            color: #28a745;
+            padding-right: 10px;
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>AI-Powered Sign Language Translator</h1>
+        </div>
+    </header>
+
+    <section id="project-details">
+        <div class="container">
+            <div class="project-image">
+                <img src="project1.jpg" alt="AI Sign Language Translator">
+            </div>
+            <div class="project-description">
+                <h2>Bridging Communication Gaps</h2>
+                <p>
+                    This project focuses on an AI-powered model that translates sign language to English, aiming to improve accessibility for individuals who are deaf or hard of hearing. The model employs advanced computer vision and machine learning techniques to interpret sign language gestures in real-time, breaking down communication barriers.
+                </p>
+
+                <h3>Problem Statement</h3>
+                <p>
+                    Communication between sign language users and non-signers remains a significant challenge. Traditional methods, such as human interpreters, may not always be available, creating a need for a reliable, automated translation system that can facilitate seamless interactions.
+                </p>
+
+                <h3>Solution</h3>
+                <p>
+                    The solution involves building an AI model using deep learning techniques to interpret sign language gestures. The model translates these gestures into English text or speech, empowering deaf and hard-of-hearing individuals to communicate more easily with others.
+                </p>
+
+                <h3>Design Overview</h3>
+                <ul>
+                    <li>Data Collection: A diverse dataset of sign language gestures is gathered and labeled with their corresponding English translations.</li>
+                    <li>Preprocessing: The dataset is cleaned, and key features are extracted for model training.</li>
+                    <li>Model Development: A deep learning model, combining CNNs and RNNs, is built to learn the relationship between gestures and English text.</li>
+                    <li>Performance Metrics: The model’s performance is evaluated using metrics like accuracy, precision, and recall.</li>
+                    <li>Deployment: The model is deployed as a web or mobile app for user-friendly access.</li>
+                </ul>
+
+                <h3>Key Features</h3>
+                <ul>
+                    <li><strong>Real-time Translation:</strong> Translates sign language gestures into English in real-time, enabling immediate communication.</li>
+                    <li><strong>High Accuracy:</strong> Trained on a comprehensive dataset, ensuring high translation accuracy.</li>
+                    <li><strong>User-Friendly:</strong> Designed to be intuitive and accessible to a wide range of users.</li>
+                </ul>
+
+                <h3>User Interface</h3>
+                <ul>
+                    <li><strong>Video Input:</strong> Users can input gestures via a live video feed or pre-recorded videos.</li>
+                    <li><strong>Translation Output:</strong> The translated English text is displayed on-screen in real-time.</li>
+                    <li><strong>Customization Options:</strong> Users can adjust translation speed, font size, and visual themes.</li>
+                </ul>
+
+                <h3>Conclusion</h3>
+                <p>
+                    The AI-powered sign language translation model is a step forward in promoting accessibility and inclusivity. By offering real-time translation between sign language and English, this project opens doors for improved communication and interaction across different communities, paving the way for a more inclusive society.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Shruthi. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
